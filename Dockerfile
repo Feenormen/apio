@@ -10,7 +10,7 @@ COPY ./package-lock.json /app/
 RUN npm install --production
 COPY . /app
 ENV NODE_ENV=production
-ENV HOST=127.0.0.1
+ENV HOST=0.0.0.0
 RUN npm run build
 
 EXPOSE 80
