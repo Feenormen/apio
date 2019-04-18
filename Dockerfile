@@ -1,6 +1,10 @@
-FROM keymetrics/pm2:latest-alpine
+#FROM keymetrics/pm2:latest-alpine
+#
+#MAINTAINER ilovintit <ilovintit@gmail.com>
 
-MAINTAINER ilovintit <ilovintit@gmail.com>
+FROM node:lastest
+
+RUN npm install pm2 -g
 
 #部署代码
 RUN mkdir -p /app
