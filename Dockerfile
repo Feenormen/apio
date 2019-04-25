@@ -2,7 +2,7 @@
 #
 #MAINTAINER ilovintit <ilovintit@gmail.com>
 
-FROM node:lastest
+FROM node:latest
 
 RUN npm install pm2 -g
 
